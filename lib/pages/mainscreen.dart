@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -12,7 +13,7 @@ class _MainScreenState extends State<MainScreen> {
   late List<CameraDescription> cameras;
   late CameraController cameraController;
 
-  int direction = 0;
+  int direction = 1;
 
   @override
   void initState() {
