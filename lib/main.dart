@@ -1,6 +1,5 @@
 import 'package:canai/pages/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:home_widget/home_widget.dart';
 
 void main() {
   runApp(const MyApp());
