@@ -1,6 +1,6 @@
 import 'package:canai/pages/mainscreen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({
@@ -10,14 +10,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amberAccent, //<-- SEE HERE
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SvgPicture.asset(
-              "assets/images/logo1.svg",
-              color: Colors.yellow,
-            ),
             const Padding(
               padding: EdgeInsets.only(
                 top: 50,
